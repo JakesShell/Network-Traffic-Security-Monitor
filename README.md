@@ -118,3 +118,55 @@ Cloud-Network-Traffic-Monitoring-And-Incident-Response/
 |-- .gitignore
 |-- README.md
 
+
+---
+
+## System Architecture
+
+This project simulates a simplified cloud monitoring architecture:
+
+- Data Source Layer: Simulated network traffic input
+- Processing Layer: Traffic analysis and anomaly detection logic
+- Monitoring Layer: Alert triggers, severity classification, and incident categories
+- Output Layer: Console dashboard, NDJSON event logs, and incident notes
+
+This layered structure reflects how cloud environments separate data ingestion, processing, monitoring, alerting, and operational visibility responsibilities.
+
+---
+
+## Example Use Case
+
+A spike in incoming traffic from a single IP address is detected.
+
+The system compares the request count against a configured alert threshold, flags the anomaly, assigns a severity level, categorizes the incident, and writes the event to structured output.
+
+Example investigation flow:
+
+- Source IP: 10.0.0.5
+- Requests: 300
+- Threshold: 200
+- Result: Alert Triggered
+- Category: Traffic Spike
+- Recommended Action: Investigate traffic source and monitor for repeat activity
+
+---
+
+## Planned Enhancements
+
+- Integration With Real-Time Monitoring Systems Such As Simulated CloudWatch-Style Metrics
+- Alerting System With Threshold-Based Notifications
+- Log Aggregation And Centralized Analysis Through An ELK-Style Simulation
+- Role-Based Dashboard Views For Different Support Levels
+- Automated Anomaly Detection Improvements
+- Incident Ticket Generation For Escalation Workflows
+- Source IP Reputation Scoring
+- Exportable Incident Summary Reports
+
+---
+
+## Professional Positioning
+
+This project represents an entry-level cloud support and incident response workflow simulation.
+
+It shows the ability to monitor traffic, detect anomalies, classify incident severity, produce structured logs, and communicate investigation results clearly.
+

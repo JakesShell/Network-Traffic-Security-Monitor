@@ -1,8 +1,14 @@
-{
-  "monitor_name": "Network Traffic Security Monitor",
+﻿{
+  "monitor_name": "Cloud Network Traffic Monitoring And Incident Response Simulation",
+  "environment": "Simulated Cloud Web Application",
+  "cloud_region": "us-east-1",
   "output_file": "network_events.ndjson",
-  "interval_seconds": 2,
-  "max_events": 6,
+  "alert_log_file": "logs.txt",
+  "sample_data_file": "sample_traffic_data.json",
+  "interval_seconds": 1,
+  "max_events": 8,
+  "request_alert_threshold": 200,
+  "byte_alert_threshold": 1000,
   "default_source": "10.0.0.15",
   "default_destination": "10.0.0.25"
 }

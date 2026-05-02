@@ -1,5 +1,12 @@
-build/
+﻿build/
 *.exe
 *.obj
 *.bak
+*.pdb
+*.ilk
+*.log
+.vs/
+out/
+logs.txt
 network_events.ndjson
+cloud_network_traffic_monitor.exe
